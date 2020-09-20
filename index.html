@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact App - Javascript</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/contact.css">
+</head>
+<body>
+
+
+<div class="contactFormContainer mt-4 mb-4">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<div class="card">
+				  <div class="card-header">
+				    Add Contacts
+				  </div>
+				  <div class="card-body">
+				    <form>
+				    	<div class="form-group">
+				    		<label>Contact Name</label>
+				    		<input type="text" id="contactName" class="form-control">
+				    		<span id="nameErr"></span>
+				    	</div>
+				    	<div class="form-group">
+				    		<label>Contact Number</label>
+				    		<input type="text" id="contactNumber" class="form-control">
+				    	</div>
+				    </form>
+				    <a id="addBtn" href="#" class="btn btn-primary">Add Contact</a>
+				  </div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="container-lg">
+			    <div class="table-responsive">
+			        <div class="table-wrapper">
+			            <div class="table-title">
+			                <div class="row">
+			                    <div class="col-sm-8"><h2>Contact <b>List</b></h2></div>
+			                    <div class="col-sm-4">
+			                        <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i> Add New</button>
+			                    </div>
+			                </div>
+			            </div>
+			            <table class="table table-bordered">
+			                <thead>
+		                    <tr>
+	                        <th>Name</th>
+	                        <th>Phone</th>
+	                        <th>Actions</th>
+		                    </tr>
+			                </thead>
+			                <tbody id="tableBody"></tbody>
+			            </table>
+			        </div>
+			    </div>
+			</div>     
+			</div>
+		</div>
+	</div>	
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/js/contact.js"></script>
+</body>
+</html>

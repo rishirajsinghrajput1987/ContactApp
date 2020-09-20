@@ -31,6 +31,8 @@ body {
 .table-title .add-new i {
     margin-right: 4px;
 }
+
+
 table.table {
     table-layout: fixed;
 }
